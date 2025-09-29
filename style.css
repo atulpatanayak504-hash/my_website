@@ -1,0 +1,25 @@
+.foodies-home-page {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/031/425/067/non_2x/thanks-giving-flat-lay-in-wooden-board-table-with-copy-space-ai-generated-free-photo.jpg'); /* or a direct online image URL ending with .jpg/.png */
+    height: 100vh;                        /* full viewport height */
+    background-size: cover;                /* cover entire div */
+    background-position: center;           /* center the image */
+    color: white;                          /* readable text */
+    display: flex;                         /* flex to center container */
+    align-items: left;                     /* horizontal centering */
+}
+
+.menu-section {
+    background-color: white;                      /* full viewport height */
+    background-size: cover;                       /* horizontal centering */
+    border-radius: 20px;
+}
+
+.menu-items {
+    border-radius: 30px;
+    padding: 16px;
+}
+
+.description {
+    font-size: 20px;
+    color: grey;
+}
