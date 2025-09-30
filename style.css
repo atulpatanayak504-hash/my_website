@@ -23,3 +23,58 @@
     font-size: 20px;
     color: grey;
 }
+
+.founder-image {
+    width: 150px;          
+    height: auto; 
+    border-radius: 20px;
+}
+
+.line {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+
+.footer-section {
+    background-color: #052a4f; /* Light grey background */
+    color: white;               /* White text color */
+    text-align: center;         /* Centered text */
+    padding: 20px 0;           /* Vertical padding */
+    margin-top: 40px;          /* Space above the footer */
+}
+
+.font-background {
+  background-color: lightslategray;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;   /* ✅ important */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;  /* remove underline */
+}
+
+.font-icon {
+  font-size: 24px;
+  margin: 0; /* ✅ remove any extra spacing */
+}
+
+/* Apply to all sections that start with sectionFoodies- */
+[id^="sectionFoodies"] {
+  scroll-margin-top: 80px; /* Adjust to your navbar’s height */
+}
+
+
+.text-muted {
+    color: #6c757d !important; /* Bootstrap's muted text color */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* push first left, second right */
+  align-items: center;           /* vertically center if needed */
+  margin: 20px 0;                /* optional spacing */
+}
+
