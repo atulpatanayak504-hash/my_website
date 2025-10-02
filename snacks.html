@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Foodies</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#sectionFoodies-home-page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#sectionFoodies-menu-section">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#sectionFoodies-about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#sectionFoodies-contact">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-secondary me-2" type="button">Sign Up</button>
+        <button class="btn btn-outline-secondary" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+    </nav>
+
+
+    <div class="menu-background">
+        <div class="container mt-5 pt-5">
+            <div class="row" id="sectionFoodies-breakfast-section">
+
+                <div class="col-12 mt-5 mb-3 text-center text-dark">
+                    <h1>Snacks Menu</h1>
+                    <p>Chai is available with every snack order for extra five rupees.</p>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Samosa-->  
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/39/40/47/39404795702b3e57be68dd57f9dfa608.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Samosa</h3>
+                        <p class="description text-primary">Price: Rs.5 per piece</p>
+                           <div class="quantity-selector mb-2">
+                             <button type="button" onclick="changeQuantity(-1, 'idli')" class="btn btn-outline-secondary btn-sm">-</button>
+                             <span id="idli-quantity" style="margin:0 10px;">1</span>
+                             <button type="button" onclick="changeQuantity(1, 'idli')" class="btn btn-outline-secondary btn-sm">+</button>
+                           </div>
+                           <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Aloo Chop-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/af/14/68/af146867022c028b59ca0947d533eeed.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Aloo Chop</h3>
+                        <p class="description text-primary">Price: Rs.5 per piece</p>
+                        <div class="quantity-selector mb-2">
+                          <button type="button" onclick="changeQuantity(-1, 'aloo-chop')" class="btn btn-outline-secondary btn-sm">-</button>
+                          <span id="aloo-chop-quantity" style="margin:0 10px;">1</span>
+                          <button type="button" onclick="changeQuantity(1, 'aloo-chop')" class="btn btn-outline-secondary btn-sm">+</button>
+                        </div>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Gari-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/29/9f/77/299f77429ab1c1472292252342f549f3.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Gari</h3>
+                        <p class="description text-primary">Price: Rs.5 per piece</p>
+                        <div class="quantity-selector mb-2">
+                            <button onclick="changeQuantity(-1, 'gari')" class="btn btn-outline-secondary btn-sm">-</button>
+                            <span id="gari-quantity" style="margin:0 10px;">1</span>
+                            <button onclick="changeQuantity(1, 'gari')" class="btn btn-outline-secondary btn-sm">+</button>
+                        </div>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Cutlet-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/82/96/6d/82966d4c479c6f2136c3bc95d7f2b6da.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Cutlet</h3>
+                        <p class="description text-primary">Price: Rs.5 per piece</p>
+                        <div class="quantity-selector mb-2">
+                          <button onclick="changeQuantity(-1, 'cutlet')" class="btn btn-outline-secondary btn-sm">-</button>
+                          <span id="cutlet-quantity" style="margin:0 10px;">1</span>
+                          <button onclick="changeQuantity(1, 'cutlet')" class="btn btn-outline-secondary btn-sm">+</button>
+                        </div>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Chai and Pakora-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/3f/80/fc/3f80fc6b37f746623571da30427aeb5d.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Chai and Pakora</h3>
+                        <p class="description text-primary">Price: Rs.20 per piece</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Vada Pav-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/6b/60/99/6b60998674dac25a2b59541c029cf9b9.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Vada Pav</h3>
+                        <p class="description text-primary">Price: Rs.15</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Gupchup-->  
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/5c/ce/f9/5ccef95a2a11fbc8d570504172ec6dc1.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Gupchup</h3>
+                            <p class="description text-primary">Price: Rs.20 (6 pieces)</p>
+                            <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Chhole Bhature-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/ad/df/10/addf10b34621f023f039e2d16c4665db.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Chhole Bhature</h3>
+                        <p class="description text-primary">Price: Rs.30 one plate</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Pav Bhaji-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/b6/81/05/b68105bb0e99f59712743d4a829b0db4.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Pav Bhaji</h3>
+                        <p class="description text-primary">Price: Rs.30 one plate</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Chaat-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/2d/52/65/2d52653530be199f32109366ac357172.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Chaat</h3>
+                        <p class="description text-primary">Price: Rs.20</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Aloo Tikki Chaat-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/34/d3/4a/34d34aab823e01a468cf0023dba10337.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Aloo Tikki Chaat</h3>
+                        <p class="description text-primary">Price: Rs.25</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Mix Plate-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/9f/41/49/9f4149cbeac248c2e288e1bd2b2105e1.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Mix Plate</h3>
+                            <p class="description text-primary">Price: Rs.30 one plate</p>
+                            <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 10px;" class="p-2">
+                               <label><input type="checkbox" name="mixplate" value="idli"> Samosa</label>                                    <label><input type="checkbox" name="mixplate" value="dosa"> Dosa</label>
+                               <label><input type="checkbox" name="mixplate" value="puri"> Aloo Chop</label>
+                               <label><input type="checkbox" name="mixplate" value="gari"> Gari</label>
+                               <label><input type="checkbox" name="mixplate" value="upma"> Cutlet</label>
+                            </div>
+                            </select>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="button-container d-flex flex-row">
+                    <div class="m-3">
+                        <button class="btn btn-primary align-items-left mb-5" id="btnBackToTop" onclick="window.location.href='menu-section.html'">
+                            Back 
+                        </button>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-primary align-items-right mb-5 ms-2" onclick="location.href='snack2.html'" id="btnNext">
+                            Next
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+<script>
+function changeQuantity(amount, itemId) {
+    const span = document.getElementById(itemId + '-quantity');
+    let value = parseInt(span.textContent, 10);
+    value = Math.max(1, value + amount); // Prevent going below 1
+    span.textContent = value;
+}
+</script>
+</html>

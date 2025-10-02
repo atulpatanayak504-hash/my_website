@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Foodies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionFoodies-home-page">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionFoodies-menu-section">Menu</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionFoodies-about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionFoodies-contact">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <button class="btn btn-secondary me-2" type="button">Sign Up</button>
+                <button class="btn btn-outline-secondary" type="submit">Login</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-background">
+        <div class="container mt-5 pt-5">
+            <div class="row" id="sectionFoodies-breakfast-section">
+
+                <div class="col-12 mt-5 mb-3 text-center text-dark">
+                    <h1>Snacks Menu</h1>
+                    <p>This menu is for snacks available at our food stall.</p>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Momos-->  
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/82/10/12/82101209428759f31894cf7d5e26d1cc.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Momos</h3>
+                            <p class="description text-primary">Price: Rs.35 (6 pieces)</p>
+                        <!--<div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 10px;">
+                                <label>
+                                    <input type="radio" name="momo-type" value="normal" checked> normal                                    </label>
+                                </label>
+                                <label>
+                                    <input type="radio" name="momo-type" value="paneer"> Paneer
+                                </label>
+                                <label>
+                                    <input type="radio" name="momo-type" value="mushroom"> Mushroom
+                                </label>
+                            </div>-->
+                            <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Pizza-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/21/60/d5/2160d5a47fc808875ee0338af5fe0ef1.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Pizza</h3>
+                        <p class="description text-primary">Price: Rs.150</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Burger-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/28/df/09/28df09263b54af6ae8a146f7b6631da3.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Burger</h3>
+                        <p class="description text-primary">Price: Rs.80</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Kebab-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/0d/3a/57/0d3a578b43642af6139b21de8c1099c0.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Kebab</h3>
+                        <p class="description text-primary">Price: Rs.80</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Onion Bhaji-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/31/e1/b2/31e1b26ca40d1075a0a941751fe5846c.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Onion Bhaji</h3>
+                        <p class="description text-primary">Price: Rs.60</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--French Fries-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/5f/f1/4f/5ff14f0099c4914c66af3665e342d2e4.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">French Fries</h3>
+                        <p class="description text-primary">Price: Rs.50</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Fried Chicken-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/5b/65/37/5b6537e4d09bdbe27f089f1c6091b42c.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Fried Chicken</h3>
+                        <p class="description text-primary">Price: Rs.180(Four Pieces)</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Spring Rolls-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/50/9d/0f/509d0f89c71b4154db31e563872751e0.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Spring Rolls</h3>
+                        <p class="description text-primary">Price: Rs.80</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Chowmein-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/37/77/a3/3777a38c1565dffd66800f39681007f7.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description"></h3>Chowmein</h3>
+                        <p class="description text-primary">Price: Rs.30</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Roll-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/f0/77/e7/f077e70250805654b38a7dbcf74c8e74.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Roll</h3>
+                        <p class="description text-primary">Price: Rs.50</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Baby Corn-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/cd/16/d8/cd16d876a898b8683f386f3ac7cf8f7f.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Baby corn</h3>
+                        <p class="description text-primary">Price: Rs.100</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Manchurian-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/24/1f/6c/241f6ceee40469e0b7079ad7341bb70b.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Manchurian</h3>
+                        <p class="description text-primary">Price: Rs.50</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="button-container d-flex flex-row">
+                    <div class="m-3">
+                        <button class="btn btn-primary align-items-left mb-5" id="btnBackToTop" onclick="window.location.href='index.html'">
+                            Back 
+                        </button>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-primary align-items-left mb-5" id="btnBackToTop" onclick="window.location.href='menu-section.html'">
+                            Previous 
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+<script>
+function changeQuantity(amount, itemId) {
+    const span = document.getElementById(itemId + '-quantity');
+    let value = parseInt(span.textContent, 10);
+    value = Math.max(1, value + amount); // Prevent going below 1
+    span.textContent = value;
+}
+</script>
+</html>

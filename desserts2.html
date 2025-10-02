@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Foodies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionFoodies-home-page">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionFoodies-menu-section">Menu</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionFoodies-about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionFoodies-contact">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <button class="btn btn-secondary me-2" type="button">Sign Up</button>
+                <button class="btn btn-outline-secondary" type="submit">Login</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-background">
+        <div class="container mt-5 pt-5">
+            <div class="row" id="sectionFoodies-breakfast-section">
+
+                <div class="col-12 mt-5 mb-3 text-center text-dark">
+                    <h1>Snacks Menu</h1>
+                    <p>This menu is for snacks available at our food stall.</p>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Ice cream-->  
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/00/26/0f/00260fea0e22a3c5380f4edb270ff05a.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Ice cream</h3>
+                            <p class="description text-primary">Price: Rs.10 (1 scoop)</p>
+                            <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Brownie-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/15/5c/04/155c0428e17a4ba7d13d32ab19f38546.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Brownie</h3>
+                        <p class="description text-primary">Price: Rs.80</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Choco lava cake-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/74/10/43/741043b8b9e5a7159ed8e2872fa14635.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Choco Lava Cake</h3>
+                        <p class="description text-primary">Price: Rs.100</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Cup Cake-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/b4/0d/a2/b40da2a87158fe8b219057e4efb6d1df.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Cup Cake</h3>
+                        <p class="description text-primary">Price: Rs.20 (1 piece)</p>
+                        <div class="quantity-selector mb-2">
+                            <button onclick="changeQuantity(-1, 'cupcake')" class="btn btn-outline-secondary btn-sm">-</button>
+                            <span id="cupcake-quantity" style="margin:0 10px;">1</span>
+                            <button onclick="changeQuantity(1, 'cupcake')" class="btn btn-outline-secondary btn-sm">+</button>
+                        </div>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Pastry-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/48/d7/cb/48d7cb22b6b5cdb84724f9383df532a8.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Pastry</h3>
+                        <p class="description text-primary">Price: Rs.60 (1 piece)</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Pudding-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/93/02/88/930288517ed523a518190825d1fdf1bb.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Pudding</h3>
+                        <p class="description text-primary">Price: Rs.70</p>
+
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Chocolate Mousse-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/11/34/d0/1134d0055cb7d812fe082721230366a6.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Chocolate Mousse</h3>
+                        <p class="description text-primary">Price: Rs.90</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Red Velvet lava Cake-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/a1/f6/ae/a1f6ae4f8eb4fec376e1d73ae767cdb8.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Red Velvet Lava Cake</h3>
+                        <p class="description text-primary">Price: Rs.100</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Choco chips Cookies-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/a5/b7/e7/a5b7e71d630ba5322a9504ea28aaa6e6.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Choco chips Cookies</h3>
+                        <p class="description text-primary">Price: Rs.50 (6 pieces)</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Sundae-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/736x/bc/60/8e/bc608ecb0642828c400f985f3a6d97f2.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Sundae</h3>
+                        <p class="description text-primary">Price: Rs.80</p>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Smores-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/fe/c4/2c/fec42cdecf0bcd6504c202661b8459a9.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Smores</h3>
+                        <p class="description text-primary">Price: Rs.15 per piece</p>
+                        <div class="quantity-selector mb-2">
+                            <button onclick="changeQuantity(-1, 'cupcake')" class="btn btn-outline-secondary btn-sm">-</button>
+                            <span id="cupcake-quantity" style="margin:0 10px;">1</span>
+                            <button onclick="changeQuantity(1, 'cupcake')" class="btn btn-outline-secondary btn-sm">+</button>
+                        </div>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 text-center"><!--Dora Cake-->
+                    <div class="mt-3 mb-5 shadow menu-section">
+                        <img 
+                            src="https://i.pinimg.com/1200x/de/76/35/de7635cf981329a2046033d062db33cd.jpg" 
+                            class="menu-items w-100 mb-5"
+                        />
+                        <h3 class="description">Dora Cake</h3>
+                        <p class="description text-primary">Price: Rs.10 per cone</p>
+                        <div class="quantity-selector mb-2">
+                            <button onclick="changeQuantity(-1, 'dora-cake')" class="btn btn-outline-secondary btn-sm">-</button>
+                            <span id="dora-cake-quantity" style="margin:0 10px;">1</span>
+                            <button onclick="changeQuantity(1, 'dora-cake')" class="btn btn-outline-secondary btn-sm">+</button>
+                        </div>
+                        <button class="btn btn-success mb-3">Order Now</button>
+                    </div>
+                </div>
+
+
+                <div class="button-container d-flex flex-row">
+                    <div class="m-3">
+                        <button class="btn btn-primary align-items-left mb-5" id="btnBackToTop" onclick="window.location.href='index.html'">
+                            Back 
+                        </button>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-primary align-items-left mb-5" id="btnBackToTop" onclick="window.location.href='menu-section.html'">
+                            Previous 
+                        </button>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+<script>
+function changeQuantity(amount, itemId) {
+    const span = document.getElementById(itemId + '-quantity');
+    let value = parseInt(span.textContent, 10);
+    value = Math.max(1, value + amount); // Prevent going below 1
+    span.textContent = value;
+}
+</script>
+</html>

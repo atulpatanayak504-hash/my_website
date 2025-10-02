@@ -16,6 +16,22 @@ window.onload = function() {
     display("sectionFoodies-menu-section");
   });
 
+  document.getElementById("btnBreakfastMenu").addEventListener("click", function() {
+    display("sectionFoodies-breakfast-section");
+  });
+
+  document.getElementById("btnMainCourseMenu").addEventListener("click", function() {
+    display("sectionFoodies-main-course-section");
+  });
+
+  document.getElementById("btnSnacksMenu").addEventListener("click", function() {
+    display("sectionFoodies-snacks-section");
+  });
+
+  document.getElementById("btnDessertsMenu").addEventListener("click", function() {
+    display("sectionFoodies-desserts-section");
+  });
+
   document.getElementById("btnBackToTop").addEventListener("click", function() {
     display("sectionFoodies-home-page");
   });

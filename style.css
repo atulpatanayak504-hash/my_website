@@ -19,15 +19,25 @@
     padding: 16px;
 }
 
+.options {
+    height: fit-content;
+}
+
 .description {
     font-size: 20px;
     color: grey;
 }
 
 .founder-image {
-    width: 150px;          
-    height: auto; 
-    border-radius: 20px;
+  width: 250px !important;
+  height: 250px !important;
+  border-radius: 20px !important;
+  object-fit: cover !important;
+}
+
+.founder-image-2 {
+  width: 100px !important;
+  height: 100px !important;
 }
 
 .line {
@@ -46,8 +56,10 @@
 }
 
 .font-background {
-  background-color: lightslategray;
-  border-radius: 50%;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
   width: 50px;
   height: 50px;
   display: inline-flex;   /* ✅ important */
@@ -78,3 +90,10 @@
   margin: 20px 0;                /* optional spacing */
 }
 
+.menu-background {
+  background: radial-gradient(circle, white 0%, yellow 100%) !important; /* Gradient background */
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;             /* Padding around the menu */
+    border-radius: 10px;       /* Rounded corners */
+}
